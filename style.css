@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background: #001514;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  height: 65px;
+}
+
+.navbar .navbar-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 80%;
+}
+
+.navbar {
+  gap: 100px;
+}
+
+.navbar-list {
+  gap: 20px;
+}
+
+.navbar-list a {
+  color: #e6af2e;
+  font-size: 15px;
+}
