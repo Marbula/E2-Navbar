@@ -1,3 +1,19 @@
+:root {
+  --background: #001514;
+
+  /* paleta de colores */
+  --1: #e6af2e;
+  --2: #754668;
+  --3: #9197ae;
+  --4: #6b9ac4;
+
+  /* tect colors */
+  --text-gray: #adb9c7;
+  --text-white: #f3f4f6;
+
+  --max-width: 1200px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +23,14 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* body */
+
+body {
+  background-color: var(--background);
+}
+
 header {
-  background: #001514;
+  background: var(--header-bg);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,6 +57,106 @@ header {
 }
 
 .navbar-list a {
-  color: #e6af2e;
+  color: var(--text-white);
   font-size: 15px;
+}
+
+/* Main */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #754668;
+}
+
+/* hero */
+
+#hero {
+  max-width: var(--max-width);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0;
+  gap: 100px;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  width: 50%;
+}
+
+.hero-info h1 {
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--text-white);
+}
+
+.hero-info p {
+  font-size: 15px;
+  width: 70%;
+  color: var(--text-white);
+}
+
+.hero-info span {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.hero-info-button {
+  display: flex;
+  gap: 30px;
+}
+
+.hero-info a {
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 15px;
+}
+
+.button-white {
+  background: var(--text-white);
+  color: var(--background);
+}
+
+.button-black {
+  background: var(--background);
+  color: var(--text-white);
+}
+
+/* img */
+.hero-img {
+  background: var(--1);
+  padding: 20px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+}
+
+#more-info {
+  max-width: var(--max-width);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  gap: 100px;
+  background: var(--background);
+  border-radius: 25px;
+}
+
+#more-info p {
+  font-size: 15px;
+  width: 70%;
+  color: var(--text-white);
+  text-align: center;
+}
+
+#more-info a {
+  color: var(--1);
 }
